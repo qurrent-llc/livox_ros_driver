@@ -380,7 +380,7 @@ static uint32_t PublishPointcloud2(StoragePacketQueue* queue, uint32_t packet_nu
   cloud.is_dense     = true;
   // adjust the real size
   cloud.data.resize(cloud.row_step);
-  ROS_INFO("%ld", cloud.data.capacity());
+  //ROS_INFO("%ld", cloud.data.capacity());
   cloud_pub.publish(cloud);
 
   return published_packet;
